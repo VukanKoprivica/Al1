@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;VI1UninformedSearch&apos; to &apos;VI1-2Vezbe(Lavirint)&apos;" description="Rename resource &apos;VI1UninformedSearch&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/VI1UninformedSearch" name="VI1-2Vezbe(Lavirint)" stamp="1667303991311" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;VI1UninformedSearch&apos;" deleteContents="true" description="Delete resource &apos;VI1UninformedSearch&apos;" element1="/VI1UninformedSearch" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1667304516826"/>
+</session>

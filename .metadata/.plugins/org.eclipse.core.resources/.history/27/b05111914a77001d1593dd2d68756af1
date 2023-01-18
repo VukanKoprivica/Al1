@@ -1,0 +1,18 @@
+package dmi.vi1.search.examples.tops;
+
+import java.util.List;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ActionsFunction;
+
+public class TopsActionsFunction implements ActionsFunction {
+
+	@Override
+	public List<Action> actions(Object s) {
+		// TODO Auto-generated method stub
+		TopsState state =(TopsState)s;
+		
+		return null;
+	}
+
+}

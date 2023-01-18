@@ -1,0 +1,23 @@
+package dmi.vi1.search.examples.tops;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ResultFunction;
+
+public class TopsResultFunction implements ResultFunction {
+
+	@Override
+	public Object result(Object s, Action a) {
+		// TODO Auto-generated method stub
+		TopsState state = (TopsState)s;
+		TopsAction action = (TopsAction)a;
+		
+		int[][] board = state.getBoard();
+		board[action.xLocation][action.yLocation]=0;
+		board[action.xLocation1][action.yLocation1]=1;
+		
+		TopsState newS = new TopsState(board);
+		
+		return newS;
+	}
+
+}

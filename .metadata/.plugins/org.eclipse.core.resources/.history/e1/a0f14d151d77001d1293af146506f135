@@ -1,0 +1,13 @@
+package dmi.vi1.search.examples.crypto;
+
+import dmi.vi1.search.framework.GoalTest;
+
+public class CryptoGoalTest implements GoalTest {
+
+	@Override
+	public boolean isGoalState(Object state) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

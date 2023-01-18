@@ -1,0 +1,13 @@
+package dmi.vi1.search.examples.tops;
+
+import dmi.vi1.search.framework.Action;
+
+public class TopsAction implements Action {
+
+	@Override
+	public boolean isNoOpAction() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

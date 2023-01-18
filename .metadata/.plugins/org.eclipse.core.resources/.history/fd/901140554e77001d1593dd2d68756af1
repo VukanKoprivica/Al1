@@ -1,0 +1,21 @@
+package dmi.vi1.search.examples.tops;
+
+import dmi.vi1.search.framework.GoalTest;
+
+public class TopsGoalTest implements GoalTest {
+
+	@Override
+	public boolean isGoalState(Object state) {
+		// TODO Auto-generated method stub
+		TopsState s = (TopsState)state;
+		int[][] board = s.getBoard();
+		int x1,y1,x2,y2,x3,y3,x4,y4;
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				
+			}
+		}
+		return false;
+	}
+
+}

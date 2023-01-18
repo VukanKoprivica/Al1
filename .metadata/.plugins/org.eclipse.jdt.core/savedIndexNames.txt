@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\vukan\faks\eclipse-workspace-vestacka\.metadata\.plugins\org.eclipse.jdt.core
+3963350956.index
+1252569377.index
+2225600586.index
+3264019528.index
+1253317542.index
+4035661204.index
+700299198.index

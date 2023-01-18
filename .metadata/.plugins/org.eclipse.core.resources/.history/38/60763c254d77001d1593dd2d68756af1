@@ -1,0 +1,65 @@
+package dmi.vi1.search.examples.tops;
+
+import dmi.vi1.search.framework.Action;
+
+public class TopsAction implements Action {
+	
+	String direction;
+	int mark;
+	int xLocation;
+	int yLocation;
+	
+	
+	
+
+	public TopsAction(String direction, int mark) {
+		this.direction=direction ;
+		this.mark = mark;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "TopsAction [direction=" + direction + ", mark=" + mark + "]";
+	}
+
+
+
+
+	public String getDirection() {
+		return direction;
+	}
+
+
+
+
+	public void setDirection(String direction) {
+		this.direction = direction;
+	}
+
+
+
+
+	public int getMark() {
+		return mark;
+	}
+
+
+
+
+	public void setMark(int mark) {
+		this.mark = mark;
+	}
+
+
+
+
+	@Override
+	public boolean isNoOpAction() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

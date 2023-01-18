@@ -1,0 +1,15 @@
+package dmi.vi1.search.examples.crypto;
+
+import dmi.vi1.search.framework.GoalTest;
+
+public class CryptoGoalTest implements GoalTest {
+
+	@Override
+	public boolean isGoalState(Object state) {
+		// TODO Auto-generated method stub
+		CryptoState s = (CryptoState)state;
+		//System.out.println(s.getRsd()+":"+s.getCoin()+":"+s.getDay());
+		return s.getRsd()>33;
+	}
+
+}

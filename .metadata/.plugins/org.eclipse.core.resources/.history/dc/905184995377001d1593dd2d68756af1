@@ -1,0 +1,32 @@
+package dmi.vi1.search.examples.tops;
+
+import java.util.Arrays;
+
+public class TopsState {
+
+	int board[][];
+
+	public TopsState(int[][] board) {
+		
+		this.board = board;
+	}
+
+	@Override
+	public String toString() {
+		return "TopsState [board=" + Arrays.toString(board) + "]";
+	}
+
+	public int[][] getBoard() {
+		return board;
+	}
+
+	public void setBoard(int[][] board) {
+		this.board = board;
+	}
+
+	
+
+	
+	
+	
+}

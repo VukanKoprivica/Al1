@@ -1,0 +1,27 @@
+package dmi.vi1.search.examples.tops;
+
+import dmi.vi1.search.framework.Action;
+
+public class TopsAction implements Action {
+	
+	String direction;
+	int mark;
+	
+	
+	
+
+	public TopsAction(String uP, String dOWN, String lEFT, String rIGHT, int mark) {
+		this.direction;
+		this.mark = mark;
+	}
+
+
+
+
+	@Override
+	public boolean isNoOpAction() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

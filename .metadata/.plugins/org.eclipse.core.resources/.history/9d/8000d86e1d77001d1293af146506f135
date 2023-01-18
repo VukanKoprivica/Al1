@@ -1,0 +1,16 @@
+package dmi.vi1.search.examples.crypto;
+
+public class CryptoMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CryptoState initalState = new CryptoState(10, 1, 1);
+		CryptoActionsFunction caf = new CryptoActionsFunction();
+		CryptoGoalTest cgt = new CryptoGoalTest();
+		CryptoResultFunction crf = new CryptoResultFunction();
+		CryptoStepCost csc = new CryptoStepCost();
+		
+
+	}
+
+}

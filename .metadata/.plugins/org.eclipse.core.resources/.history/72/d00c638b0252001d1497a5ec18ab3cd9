@@ -1,0 +1,17 @@
+package dmi.vi1.search.examples.romania;
+
+public class RomaniMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		RomaniaState initState = new RomaniaState("Arad");
+		
+		R
+		
+		
+
+	}
+
+}

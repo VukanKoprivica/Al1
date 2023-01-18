@@ -1,0 +1,13 @@
+package dmi.vi1.search.examples.fourinarow;
+
+import dmi.vi1.search.framework.Action;
+
+public class FIARAction implements Action {
+
+	@Override
+	public boolean isNoOpAction() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

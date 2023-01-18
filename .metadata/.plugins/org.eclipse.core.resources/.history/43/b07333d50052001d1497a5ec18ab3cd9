@@ -1,0 +1,19 @@
+package dmi.vi1.search.examples.romania;
+
+import java.util.List;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ActionsFunction;
+
+public class RomaniaActionFunction implements ActionsFunction {
+
+	@Override
+	public List<Action> actions(Object s) {
+		// TODO Auto-generated method stub
+		RomaniaState rs =(RomaniaState) s;
+		String currCity = rs.getCity();
+		
+	
+	}
+
+}

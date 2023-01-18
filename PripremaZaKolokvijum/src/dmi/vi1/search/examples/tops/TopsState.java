@@ -1,0 +1,57 @@
+package dmi.vi1.search.examples.tops;
+
+import java.util.Arrays;
+import java.util.Iterator;
+
+public class TopsState {
+
+	int board[][];
+
+	public TopsState(int[][] board) {
+		
+		this.board = board;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				sb.append("|").append(this.board[i][j]).append("|");
+			}
+			sb.append("\n");
+		}
+		
+		
+		
+		return sb.toString()
+				.replace("||", "|")
+				.replace("0", " ");
+
+	}
+
+	public int[][] getBoard() {
+		return board;
+	}
+
+	public void setBoard(int[][] board) {
+		this.board = board;
+	}
+
+	public TopsState clone() {
+		TopsState newS = new TopsState(new int[8][8]);
+		for(int i=0;i<8;i++) {
+			for(int j=0;j<8;j++) {
+				newS.getBoard()[i][j]=this.board[i][j];
+			}
+		}
+		return newS;
+	}
+	
+	
+
+	
+	
+	
+}

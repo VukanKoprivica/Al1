@@ -1,0 +1,38 @@
+package dmi.vi1.search.examples.crypto;
+
+import java.util.List;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.GraphSearch;
+import dmi.vi1.search.framework.Problem;
+import dmi.vi1.search.uninformed.BreadthFirstSearch;
+import dmi.vi1.search.uninformed.DepthFirstSearch;
+
+public class CryptoMain {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		CryptoState initalState = new CryptoState(12, 1, 0);
+		CryptoActionsFunction caf = new CryptoActionsFunction();
+		CryptoGoalTest cgt = new CryptoGoalTest();
+		CryptoResultFunction crf = new CryptoResultFunction();
+		CryptoStepCost csc = new CryptoStepCost();
+		
+		BreadthFirstSearch bfs = new BreadthFirstSearch(new GraphSearch());
+		DepthFirstSearch dfs = new DepthFirstSearch(new GraphSearch());
+		Problem p = new Problem(initalState, caf, crf, cgt, csc);
+		
+		List<Action> actions = bfs.search(p);
+		CryptoState state2 = initalState; 
+		System.out.println(state2);
+		
+		for(Action a :actions) {
+			state2=(CryptoState)crf.result(state2, a);
+			System.out.println(a+":::::"+state2);
+			
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package dmi.vi1.search.examples.crypto;
+
+import java.util.List;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.GraphSearch;
+import dmi.vi1.search.uninformed.BreadthFirstSearch;
+
+public class CryptoMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CryptoState initalState = new CryptoState(10, 1, 1);
+		CryptoActionsFunction caf = new CryptoActionsFunction();
+		CryptoGoalTest cgt = new CryptoGoalTest();
+		CryptoResultFunction crf = new CryptoResultFunction();
+		CryptoStepCost csc = new CryptoStepCost();
+		
+		BreadthFirstSearch bfs = new BreadthFirstSearch(new GraphSearch());
+		List<Action> action = 
+		
+
+	}
+
+}

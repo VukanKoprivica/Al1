@@ -1,0 +1,40 @@
+package dmi.vi1.search.examples.tops;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ResultFunction;
+
+public class TopsResultFunction implements ResultFunction {
+
+	@Override
+	public Object result(Object s, Action a) {
+		// TODO Auto-generated method stub
+		TopsState state = (TopsState)s;
+		TopsAction action = (TopsAction)a;
+		
+		int[][] board = state.getBoard();
+		
+		switch (action.direction) {
+		case "UP":{
+			board[action.xLocation-1][action.yLocation]=action.mark;
+			board[action.xLocation][action.yLocation]=0;
+			break;
+		}case "DOWN":{
+			board[action.xLocation+1][action.yLocation]=action.mark;
+			board[action.xLocation][action.yLocation]=0;
+			break;
+		}case "LEFT":{
+			board[action.xLocation][action.yLocation-1]=action.mark;
+			board[action.xLocation][action.yLocation]=0;
+			break;
+		}case "RIGHT":{
+			board[action.xLocation][action.yLocation+1]=action.mark;
+			board[action.xLocation][action.yLocation]=0;
+			break;
+			}
+		}
+		TopsState newS = new TopsState(board);
+		
+		return newS;
+	}
+
+}

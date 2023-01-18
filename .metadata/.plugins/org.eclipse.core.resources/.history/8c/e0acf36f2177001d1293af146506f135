@@ -1,0 +1,34 @@
+package dmi.vi1.search.examples.crypto;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ResultFunction;
+
+public class CryptoResultFunction implements ResultFunction {
+
+	@Override
+	public Object result(Object s, Action a) {
+		// TODO Auto-generated method stub
+		CryptoAction action = (CryptoAction)a;
+		CryptoState state =(CryptoState)s;
+		
+		int money =state.getRsd();
+		int coin = state.getCoin();
+		
+		int day = state.getDay();
+		
+		if(action.getAction().equals("buy")) {
+			money-=state.getPriceForDay(day);
+			coin +=1;
+		}
+		if(action.getAction().equals("sell")) {
+			money += state.getPriceForDay(day);
+			coin -=1;
+		}
+		
+		CryptoState newState = new CryptoState(money, coin, day+1);
+	
+		
+		return newState;
+	}
+
+}

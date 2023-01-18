@@ -1,0 +1,25 @@
+package dmi.vi1.search.examples.tops;
+
+public class TopsMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][]board = {
+				{0,0,0,0,0,0,0,0},
+				{0,0,0,1,0,0,0,0},
+				{0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0},
+				{0,2,0,3,0,0,4,0},
+				{0,0,0,0,0,0,0,0},
+				{0,0,0,0,0,0,0,0},
+		} ;
+		TopsState initalState = new TopsState(board);
+		TopsActionsFunction taf = new TopsActionsFunction();
+		TopsGoalTest tgt = new TopsGoalTest();
+		TopsResultFunction trf = new TopsResultFunction();
+		TopsStepCost tsc = new TopsStepCost();
+
+	}
+
+}

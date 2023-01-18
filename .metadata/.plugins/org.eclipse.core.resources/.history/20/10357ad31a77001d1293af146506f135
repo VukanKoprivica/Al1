@@ -1,0 +1,9 @@
+package dmi.vi1.search.examples.crypto;
+
+public class CryptoState {
+
+    private int rsd;
+    private int coin;
+	
+	
+}

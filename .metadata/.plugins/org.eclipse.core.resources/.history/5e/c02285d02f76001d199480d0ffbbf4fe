@@ -1,0 +1,20 @@
+package dmi.vi1.search.examples.fourinarow;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ActionsFunction;
+
+public class FIARActionFunction implements ActionsFunction {
+
+	@Override
+	public List<Action> actions(Object s) {
+		// TODO Auto-generated method stub
+		
+		List<Action>actions = new ArrayList<Action>;
+		
+		return null;
+	}
+
+}

@@ -1,0 +1,13 @@
+package dmi.vi1.search.examples.tops;
+
+public class TopsState {
+
+	int board[][];
+
+	public TopsState(int[][] board) {
+		
+		this.board = board;
+	}
+	
+	
+}

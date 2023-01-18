@@ -1,0 +1,14 @@
+package dmi.vi1.search.examples.fourinarow;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ResultFunction;
+
+public class FIARResultFunction implements ResultFunction {
+
+	@Override
+	public Object result(Object s, Action a) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,50 @@
+package dmi.vi1.search.examples.tops;
+
+import java.util.Arrays;
+
+public class TopsState {
+
+	int board[][];
+
+	public TopsState(int[][] board) {
+		
+		this.board = board;
+	}
+
+	@Override
+	public String toString() {
+		return "TopsState [board=" + Arrays.toString(board) + "]";
+	}
+
+	public int[][] getBoard() {
+		return board;
+	}
+
+	public void setBoard(int[][] board) {
+		this.board = board;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + Arrays.deepHashCode(board);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TopsState other = (TopsState) obj;
+		if (!Arrays.deepEquals(board, other.board))
+			return false;
+		return true;
+	}
+	
+	
+}

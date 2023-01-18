@@ -1,0 +1,13 @@
+package dmi.vi1.search.examples.crypto;
+
+import dmi.vi1.search.framework.Action;
+
+public class CryptoAction implements Action {
+
+	@Override
+	public boolean isNoOpAction() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

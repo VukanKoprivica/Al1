@@ -1,0 +1,10 @@
+package dmi.vi1.search.examples.crypto;
+
+public class CryptoMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

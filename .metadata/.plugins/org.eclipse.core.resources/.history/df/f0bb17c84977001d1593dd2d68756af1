@@ -1,0 +1,5 @@
+package dmi.vi1.search.examples.tops;
+
+public class TopsState {
+
+}

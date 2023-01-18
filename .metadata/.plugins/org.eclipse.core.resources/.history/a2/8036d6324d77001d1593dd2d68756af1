@@ -1,0 +1,27 @@
+package dmi.vi1.search.examples.tops;
+
+import dmi.vi1.search.framework.Action;
+import dmi.vi1.search.framework.ResultFunction;
+
+public class TopsResultFunction implements ResultFunction {
+
+	@Override
+	public Object result(Object s, Action a) {
+		// TODO Auto-generated method stub
+		TopsState state = (TopsState)s;
+		TopsAction action = (TopsAction)a;
+		TopsState newS = new TopsState(state.getBoard());
+		
+		switch (action.direction) {
+		case "UP":
+			
+			break;
+
+		default:
+			break;
+		}
+		
+		return null;
+	}
+
+}

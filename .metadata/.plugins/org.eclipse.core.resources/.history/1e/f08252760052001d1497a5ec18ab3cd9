@@ -1,0 +1,15 @@
+package dmi.vi1.search.examples.romania;
+
+import dmi.vi1.search.framework.Action;
+
+public class RomaniaAction implements Action {
+	
+	private String toCity;
+
+	@Override
+	public boolean isNoOpAction() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
